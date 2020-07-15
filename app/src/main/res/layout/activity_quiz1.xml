@@ -8,10 +8,14 @@
     tools:context=".Quiz1"
     android:orientation="vertical">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="205dp"
-        android:src="@drawable/cycling" />
+        android:src="@drawable/nissan" />
 
     <TextView
         android:layout_width="match_parent"
@@ -22,7 +26,7 @@
         android:textAlignment="center"
         android:textColor="@color/cardview_light_background"
         android:layout_gravity="center"
-        android:text="What should you always wear when cycling?"/>
+        android:text="Les feux de marche arrière allument des feux ?"/>
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -36,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="9dp"
-            android:text="One"
+            android:text="A l'avant"
             android:onClick="checkButton"
             android:checked="true"/>
 
@@ -45,14 +49,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="9dp"
-            android:text="Two"
+            android:text="A l'arrière"
             android:onClick="checkButton"/>
 
         <RadioButton
             android:id="@+id/radio_three"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Three"
+            android:text="A l'avant et à l'arrière"
             android:onClick="checkButton"/>
 
     </RadioGroup>

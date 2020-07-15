@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="25dp"
     tools:context=".Score"
     android:orientation="vertical">
 
+
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_gravity="center"
         android:src="@drawable/main_panel" />
 
     <TextView
@@ -31,45 +38,38 @@
         android:layout_height="wrap_content"
         android:textSize="30dp"/>
 
-    <at.grabner.circleprogress.CircleProgressView
+    <com.github.lzyzsd.circleprogress.DonutProgress
         android:layout_gravity="center"
-        android:id="@+id/circleView"
-        android:layout_width="277dp"
-        android:layout_height="277dp"
-        app:cpv_barColor="@color/design_default_color_primary"
-        app:cpv_barWidth="35dp"
-        app:cpv_maxValue="100"
-        app:cpv_rimColor="@color/cardview_dark_background"
-        app:cpv_rimWidth="35dp"
-        app:cpv_seekMode="true"
-        app:cpv_showUnit="true"
-        app:cpv_spinColor="@color/design_default_color_on_secondary"
-        app:cpv_textColor="@color/design_default_color_primary"
-        app:cpv_textScale="1"
-        app:cpv_unit="%"
+        android:id="@+id/donut_progress"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+
         />
 
+
+
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="5dp"
-        android:orientation="horizontal">
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="5dp"
+       android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btRetry"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Retry" />
+       <Button
+           android:id="@+id/btRetry"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Retry" />
 
-        <Button
-            android:id="@+id/btExit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Exit" />
+       <Button
+           android:id="@+id/btExit"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Exit" />
 
-    </LinearLayout>
+   </LinearLayout>
 </LinearLayout>
+</layout>
